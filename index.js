@@ -3,10 +3,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const BACKGROUND_IMAGE_URL = 'https://images.unsplash.com/photo-1620503292890-c597f62cce8d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8';
-// *** IMPORTANT: REPLACE THIS URL WITH A LINK TO CHERRY SHY P. SABARIAS' PROFILE PICTURE ***
-const PROFILE_PIC_URL = 'https://avatars.githubusercontent.com/u/183344650?v=4'; // Placeholder Profile Picture URL
+const PROFILE_PIC_URL = 'https://avatars.githubusercontent.com/u/183344650?v=4'; 
 
-// --- SINGLE HOME PAGE ROUTE (Merges Welcome and Info) ---
 app.get('/', (req, res) => {
   res.send(`
     <!DOCTYPE html>
@@ -82,8 +80,8 @@ app.get('/', (req, res) => {
     <body>
     
       <div class="container" id="welcome-container">
-        <h1>Hi! Welcome to My Page</h1>
-        <p>Hope you're doing fine! ♥</p>
+        <h1>Welcome to My Page!</h1>
+        <p>Have a Nice Day!</p>
         
         <button id="toggle-button" onclick="showInfo()">
           See My Info

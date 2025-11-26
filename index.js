@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
             height: 150px;
             border-radius: 50%; /* Makes the image circular */
             object-fit: cover;
-            border: 4px solid #ffdb58; /* Border around the picture */
+            border: 4px solid #ff58cdff; /* Border around the picture */
             margin-bottom: 20px;
         }
         /* KEY CHANGE: Initially hide the info container */
